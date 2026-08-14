@@ -51,15 +51,37 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-slate-300">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-[var(--color-brand-gold)] flex-shrink-0 mt-0.5" aria-hidden="true" />
-                <span>{businessInfo.location.address}</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Dafara+Junction,+Beside+Dafara+Mosque,+Kuje,+Abuja,+Nigeria"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-300 hover:text-[var(--color-brand-gold)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-gold)] rounded-sm"
+                >
+                  {businessInfo.location.address}
+                </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[var(--color-brand-gold)] flex-shrink-0" aria-hidden="true" />
-                <span>{businessInfo.contact.allPhones.join(' / ')}</span>
+                <div className="flex flex-wrap gap-x-2 gap-y-1">
+                  {businessInfo.contact.allPhones.map((phone) => (
+                    <a
+                      key={phone}
+                      href={`tel:${phone}`}
+                      className="text-slate-300 hover:text-[var(--color-brand-gold)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-gold)] rounded-sm"
+                    >
+                      {phone}
+                    </a>
+                  ))}
+                </div>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[var(--color-brand-gold)] flex-shrink-0" aria-hidden="true" />
-                <span>{businessInfo.contact.email}</span>
+                <a
+                  href={`mailto:${businessInfo.contact.email.replace('&', '%26')}`}
+                  className="text-slate-300 hover:text-[var(--color-brand-gold)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-gold)] rounded-sm"
+                >
+                  {businessInfo.contact.email}
+                </a>
               </li>
             </ul>
           </div>
