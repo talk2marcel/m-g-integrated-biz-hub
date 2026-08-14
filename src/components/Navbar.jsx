@@ -55,12 +55,12 @@ export function Navbar() {
             </div>
 
             {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+            <div className="hidden md:flex items-center space-x-5 lg:space-x-7">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-sm font-semibold text-slate-700 hover:text-[var(--color-brand-emerald)] transition-colors py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-emerald)] rounded-sm"
+                  className="text-[0.8rem] lg:text-sm font-semibold text-slate-700 hover:text-[var(--color-brand-emerald)] transition-colors py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-emerald)] rounded-sm"
                 >
                   {item.name}
                 </a>
@@ -76,9 +76,10 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 ariaLabel="Chat with us on WhatsApp"
+                className="whitespace-nowrap"
               >
                 <MessageCircle className="w-4 h-4 shrink-0" aria-hidden="true" />
-                <span>WhatsApp CTA</span>
+                <span>WhatsApp</span>
               </Button>
             </div>
 
@@ -110,10 +111,10 @@ export function Navbar() {
                   key={item.name}
                   href={item.href}
                   onClick={closeMobileMenu}
-                  className="px-3 py-2.5 text-base font-semibold text-slate-800 hover:bg-slate-50 hover:text-[var(--color-brand-emerald)] rounded-lg transition-colors flex items-center justify-between"
+                  className="px-3 py-2.5 text-base font-semibold text-slate-800 hover:bg-slate-50 hover:text-[var(--color-brand-emerald)] rounded-lg transition-colors flex items-center justify-between gap-3"
                 >
-                  <span>{item.name}</span>
-                  <ArrowUpRight className="w-4 h-4 text-slate-400" aria-hidden="true" />
+                  <span className="truncate">{item.name}</span>
+                  <ArrowUpRight className="w-4 h-4 text-slate-400 shrink-0" aria-hidden="true" />
                 </a>
               ))}
             </div>
@@ -129,7 +130,7 @@ export function Navbar() {
                 onClick={closeMobileMenu}
               >
                 <MessageCircle className="w-4 h-4 shrink-0" aria-hidden="true" />
-                <span>Chat on WhatsApp ({businessInfo.contact.primaryWhatsApp})</span>
+                <span>Chat on WhatsApp</span>
               </Button>
             </div>
           </div>

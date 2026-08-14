@@ -24,7 +24,7 @@ export function SectionHeading({
         </h2>
       )}
       {subtitle && (
-        <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
+        <p className="text-[0.95rem] sm:text-lg text-slate-600 leading-relaxed font-medium">
           {subtitle}
         </p>
       )}

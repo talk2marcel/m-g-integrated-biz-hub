@@ -44,7 +44,7 @@ function WhyChooseUs() {
             </div>
 
             <h3 className="text-lg font-bold tracking-tight text-[var(--color-brand-slate)]">{title}</h3>
-            <p className="mt-3 text-sm leading-6 text-slate-600">{description}</p>
+            <p className="mt-3 text-[0.95rem] leading-6 text-slate-600">{description}</p>
           </article>
         ))}
       </div>

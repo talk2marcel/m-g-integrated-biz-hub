@@ -38,9 +38,9 @@ function App() {
           />
           <div className="mt-8 space-y-4 max-w-3xl">
             {faqs.map((faq) => (
-              <div key={faq.id} className="p-4 bg-white rounded-xl border border-slate-200 space-y-1">
-                <h3 className="font-bold text-sm text-[var(--color-brand-slate)]">{faq.question}</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">{faq.answer}</p>
+              <div key={faq.id} className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-5 shadow-sm">
+                <h3 className="text-base sm:text-lg font-bold text-[var(--color-brand-slate)]">{faq.question}</h3>
+                <p className="mt-2 text-[0.95rem] leading-7 text-slate-600">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -54,21 +54,21 @@ function App() {
             subtitle="Visit our hub in Kuje or reach out via phone, email, or WhatsApp."
           />
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 bg-white rounded-xl border border-slate-200 space-y-4">
-              <h3 className="font-bold text-lg text-[var(--color-brand-slate)]">Hub Address</h3>
-              <p className="text-sm text-slate-700">{businessInfo.location.address}</p>
-              <h4 className="font-bold text-sm text-[var(--color-brand-emerald)]">Business Hours</h4>
-              <p className="text-xs text-slate-600">{businessInfo.hours.summary}</p>
+            <div className="p-6 bg-white rounded-2xl border border-slate-200 space-y-4 shadow-sm">
+              <h3 className="text-xl font-bold text-[var(--color-brand-slate)]">Hub Address</h3>
+              <p className="text-[0.95rem] leading-7 text-slate-700">{businessInfo.location.address}</p>
+              <h4 className="text-base font-bold text-[var(--color-brand-emerald)]">Business Hours</h4>
+              <p className="text-[0.95rem] leading-7 text-slate-600">{businessInfo.hours.summary}</p>
             </div>
-            <div className="p-6 bg-white rounded-xl border border-slate-200 space-y-4">
-              <h3 className="font-bold text-lg text-[var(--color-brand-slate)]">Direct Contacts</h3>
-              <ul className="text-sm space-y-2 text-slate-700">
+            <div className="p-6 bg-white rounded-2xl border border-slate-200 space-y-4 shadow-sm">
+              <h3 className="text-xl font-bold text-[var(--color-brand-slate)]">Direct Contacts</h3>
+              <ul className="space-y-3 text-[0.95rem] text-slate-700">
                 <li><strong>Primary WhatsApp:</strong> {businessInfo.contact.primaryWhatsApp}</li>
                 <li><strong>Other Phones:</strong> {businessInfo.contact.secondaryPhones.join(', ')}</li>
                 <li><strong>Email:</strong> {businessInfo.contact.email}</li>
               </ul>
               <div className="pt-2">
-                <Button href={primaryWhatsAppUrl} variant="whatsapp" size="sm" target="_blank" rel="noopener noreferrer">
+                <Button href={primaryWhatsAppUrl} variant="whatsapp" size="md" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   Message on WhatsApp
                 </Button>
               </div>

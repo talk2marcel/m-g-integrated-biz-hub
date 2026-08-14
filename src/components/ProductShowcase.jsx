@@ -47,7 +47,7 @@ function ProductShowcase() {
               </div>
 
               <h3 className="text-lg font-bold tracking-tight text-[var(--color-brand-slate)]">{product.name}</h3>
-              <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{product.description}</p>
+              <p className="mt-3 flex-1 text-[0.95rem] leading-6 text-slate-600">{product.description}</p>
 
               <div className="mt-5">
                 <Button

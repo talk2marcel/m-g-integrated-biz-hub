@@ -61,11 +61,11 @@ function FeaturedServices() {
               </div>
 
               <h3 className="mt-5 text-2xl font-extrabold tracking-tight text-[var(--color-brand-slate)]">{name}</h3>
-              <p className="mt-3 text-sm leading-6 text-slate-700">{description}</p>
+              <p className="mt-3 text-[0.95rem] leading-6 text-slate-700">{description}</p>
 
               <ul className="mt-5 space-y-2.5">
                 {highlights.map((highlight) => (
-                  <li key={highlight} className="flex items-start gap-2 text-sm text-slate-700">
+                  <li key={highlight} className="flex items-start gap-2 text-[0.95rem] text-slate-700">
                     <span className="mt-1 h-2 w-2 rounded-full bg-[var(--color-brand-emerald)]" aria-hidden="true" />
                     <span>{highlight}</span>
                   </li>
