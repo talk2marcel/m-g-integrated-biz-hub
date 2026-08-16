@@ -62,7 +62,7 @@ function ProductShowcase() {
       .map((item) => `${item.name} x${item.quantity}`)
       .join(', ');
     const totalSummary = subtotal > 0 ? `₦${subtotal.toLocaleString('en-NG')}` : 'Price on Request';
-    const message = `Hello M.&.G Integrated Biz Hub, I would like to place this order: ${itemSummary}. Total: ${totalSummary}. Please confirm product availability and delivery details.`;
+    const message = `Hello M.&.G Integrated Biz Hub, I would like to order: ${itemSummary}. Total: ${totalSummary}. Please confirm product availability and delivery details.`;
     const checkoutUrl = getWhatsAppLink(message, PRIMARY_WHATSAPP_NUMBER);
 
     window.open(checkoutUrl, '_blank', 'noopener,noreferrer');

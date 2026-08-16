@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Menu, X, MessageCircle, ArrowUpRight } from 'lucide-react';
-import { businessInfo } from '../data/businessInfo';
 import { getWhatsAppLink } from '../utils/whatsapp';
 import Button from './Button';
 import NoticeBar from './NoticeBar';
@@ -37,20 +36,18 @@ export function Navbar() {
       <nav className="border-b border-slate-200 bg-white/95 backdrop-blur-sm" aria-label="Main Navigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
-            {/* Text-Based M.&.G Branding (No Logo created per requirements) */}
+            {/* Logo Branding */}
             <div className="flex-shrink-0">
               <a
                 href="#hero"
-                className="group flex flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-emerald)] rounded-md p-1 transition-opacity"
+                className="inline-flex focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-emerald)] rounded-md transition-opacity hover:opacity-80"
+                title="M.&.G Integrated Biz Hub"
               >
-                <div className="flex items-center gap-1.5">
-                  <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-[var(--color-brand-slate)] group-hover:text-[var(--color-brand-emerald)] transition-colors">
-                    {businessInfo.name}
-                  </span>
-                </div>
-                <span className="text-[10px] sm:text-xs font-semibold text-slate-500 tracking-wide">
-                  {businessInfo.tagline}
-                </span>
+                <img
+                  src="/images/logo.png"
+                  alt="M.&.G Integrated Biz Hub"
+                  className="h-12 sm:h-16 w-auto"
+                />
               </a>
             </div>
 

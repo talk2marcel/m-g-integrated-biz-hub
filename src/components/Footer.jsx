@@ -11,14 +11,21 @@ export function Footer() {
     <footer className="bg-[var(--color-brand-slate)] text-white border-t-4 border-[var(--color-brand-gold)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Column 1: Business Info */}
+          {/* Column 1: Business Info with Logo */}
           <div className="space-y-4">
-            <h3 className="text-xl font-extrabold tracking-tight text-white">
-              {businessInfo.name}
-            </h3>
-            <p className="text-sm text-slate-300 font-medium leading-relaxed">
-              {businessInfo.tagline}
-            </p>
+            <img
+              src="/images/logo.png"
+              alt="M.&.G Integrated Biz Hub"
+              className="h-16 w-auto"
+            />
+            <div>
+              <h3 className="text-xl font-extrabold tracking-tight text-white">
+                {businessInfo.name}
+              </h3>
+              <p className="text-sm text-slate-300 font-medium leading-relaxed mt-2">
+                {businessInfo.tagline}
+              </p>
+            </div>
             <div className="pt-2 text-xs text-amber-400 font-semibold">
               Kuje, Abuja, Nigeria
             </div>
