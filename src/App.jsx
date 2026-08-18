@@ -21,6 +21,7 @@ function App() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: businessInfo.name,
+    url: 'https://m-g-integrated-biz-hub.vercel.app',
     description:
       'M.&.G Integrated Biz Hub in Kuje, Abuja provides IT and digital services, computer and phone support, JAMB/WAEC CBT practice, POS services, fashion and sewing, farm products, and general merchandise.',
     email: businessInfo.contact.email,

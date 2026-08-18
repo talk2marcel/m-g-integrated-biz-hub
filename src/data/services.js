@@ -39,6 +39,15 @@ export const services = [
     iconName: 'CreditCard',
   },
   {
+    id: 'coopsave',
+    title: 'CoopSave — Cooperative Thrift Platform',
+    category: 'Financial',
+    description: 'Digital platform created by M.&.G Integrated Biz Hub designed to help cooperative/thrift societies manage savings/contributions and related cooperative activities.',
+    iconName: 'PiggyBank',
+    ctaText: 'Visit CoopSave',
+    ctaUrl: 'https://coopsave.vercel.app',
+  },
+  {
     id: 'phone-repairs',
     title: 'Phone Repairs & Accessories',
     category: 'Technology',
@@ -49,14 +58,14 @@ export const services = [
     id: 'fashion-sewing',
     title: 'Fashion & Sewing',
     category: 'Lifestyle',
-    description: 'Bespoke fashion design, tailoring, clothing alterations, and custom garment sewing services.',
+    description: 'Fashion design and sewing, clothing alterations/custom sewing, and sale of wigs and weavon.',
     iconName: 'Scissors',
   },
   {
     id: 'farm-food',
     title: 'Farm & Food Products',
     category: 'Retail',
-    description: 'Supply of agricultural produce, farm outputs, and essential food items sourced for quality.',
+    description: 'Farm and food products, fresh agricultural produce, vegetables such as Ugu (fluted pumpkin), and other seasonal agricultural products.',
     iconName: 'Wheat',
   },
   {

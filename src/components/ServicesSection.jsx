@@ -8,6 +8,8 @@ import {
   Scissors,
   Wheat,
   ShoppingBag,
+  PiggyBank,
+  ExternalLink,
 } from 'lucide-react';
 import Badge from './Badge';
 import Button from './Button';
@@ -25,6 +27,7 @@ const iconMap = {
   Scissors,
   Wheat,
   ShoppingBag,
+  PiggyBank,
 };
 
 const categoryVariantMap = {
@@ -66,6 +69,22 @@ function ServicesSection() {
 
                 <h3 className="text-lg font-bold tracking-tight text-[var(--color-brand-slate)]">{service.title}</h3>
                 <p className="mt-3 text-[0.95rem] leading-6 text-slate-600">{service.description}</p>
+
+                {service.ctaUrl && (
+                  <div className="mt-auto pt-4">
+                    <Button
+                      href={service.ctaUrl}
+                      variant="primary"
+                      size="sm"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full sm:w-auto inline-flex items-center gap-1.5"
+                    >
+                      <span>{service.ctaText || 'Visit CoopSave'}</span>
+                      <ExternalLink className="h-4 w-4 shrink-0" aria-hidden="true" />
+                    </Button>
+                  </div>
+                )}
               </article>
             );
           })}

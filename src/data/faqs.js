@@ -23,7 +23,7 @@ export const faqs = [
   {
     id: 'faq-services',
     question: 'What range of products and services do you offer?',
-    answer: 'M.&.G Integrated Biz Hub offers IT & Technology services, Computer sales & accessories, AI & digital services, JAMB/WAEC CBT practice facilities, POS financial services, phone repairs & accessories, fashion & sewing, farm & food products, and general merchandise.',
+    answer: 'M.&.G Integrated Biz Hub offers IT & Technology services, Computer sales & accessories, AI & digital services, JAMB/WAEC CBT practice facilities, POS financial services, CoopSave cooperative thrift platform, phone repairs & accessories, fashion & sewing, farm & food products, and general merchandise.',
   },
   {
     id: 'faq-cbt-details',
