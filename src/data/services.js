@@ -9,6 +9,8 @@ export const services = [
     category: 'Technology',
     description: 'Comprehensive IT support, networking solutions, software installation, and technical setup services.',
     iconName: 'Cpu',
+    image: '/images/services/it-tech-services.jpg',
+    imageAlt: 'IT and technology support, network configuration, and technical setup services',
   },
   {
     id: 'computer-sales',
@@ -16,6 +18,8 @@ export const services = [
     category: 'Technology',
     description: 'Computers, laptops, desktop accessories, storage media, and computer peripheral supply.',
     iconName: 'Monitor',
+    image: '/images/services/computer-sales.jpg',
+    imageAlt: 'Laptops, desktop computers, and computer accessories',
   },
   {
     id: 'ai-digital',
@@ -23,6 +27,8 @@ export const services = [
     category: 'Technology',
     description: 'AI tool orientation, digital business workflow guidance, and modern tech skills solutions.',
     iconName: 'Sparkles',
+    image: '/images/services/ai-services.jpg',
+    imageAlt: 'AI tools orientation, digital business workflow guidance, and modern technology skills',
   },
   {
     id: 'cbt-practice',
@@ -30,6 +36,8 @@ export const services = [
     category: 'Learning',
     description: 'Computer-Based Test (CBT) practice facilities, exam preparation environment, and educational support.',
     iconName: 'GraduationCap',
+    image: '/images/services/cbt-practice.jpg',
+    imageAlt: 'Computer-based test practice facilities and examination preparation environment',
   },
   {
     id: 'pos-services',
@@ -37,6 +45,8 @@ export const services = [
     category: 'Financial',
     description: 'Reliable POS cash withdrawal, funds transfer, utility bill payments, and agent banking services.',
     iconName: 'CreditCard',
+    image: '/images/services/pos-services.jpg',
+    imageAlt: 'POS cash withdrawal, funds transfer, and financial agent services',
   },
   {
     id: 'coopsave',
@@ -46,6 +56,8 @@ export const services = [
     iconName: 'PiggyBank',
     ctaText: 'Visit CoopSave',
     ctaUrl: 'https://coopsave.vercel.app',
+    image: '/images/services/financial-services.jpg',
+    imageAlt: 'CoopSave digital cooperative thrift platform interface and savings management',
   },
   {
     id: 'phone-repairs',
@@ -53,6 +65,8 @@ export const services = [
     category: 'Technology',
     description: 'Mobile phone repair services, screen fixes, battery replacements, chargers, cables, and mobile accessories.',
     iconName: 'Smartphone',
+    image: '/images/services/phone-repairs.jpg',
+    imageAlt: 'Mobile phone repair service, screen replacement, and phone accessories',
   },
   {
     id: 'fashion-sewing',
@@ -60,6 +74,8 @@ export const services = [
     category: 'Lifestyle',
     description: 'Fashion design and sewing, clothing alterations/custom sewing, and sale of wigs and weavon.',
     iconName: 'Scissors',
+    image: '/images/services/fashion-sewing.jpg',
+    imageAlt: 'Fashion design, custom garment sewing, tailoring alterations, and wig sales',
   },
   {
     id: 'farm-food',
@@ -67,6 +83,8 @@ export const services = [
     category: 'Retail',
     description: 'Farm and food products, fresh agricultural produce, vegetables such as Ugu (fluted pumpkin), and other seasonal agricultural products.',
     iconName: 'Wheat',
+    image: '/images/services/farm-food-products.jpg',
+    imageAlt: 'Fresh agricultural produce, Ugu vegetables, and farm food products',
   },
   {
     id: 'general-merchandise',
@@ -74,6 +92,8 @@ export const services = [
     category: 'Retail',
     description: 'Variety of daily business, household, and office utility general merchandise products.',
     iconName: 'ShoppingBag',
+    image: '/images/services/general-merchandise.jpg',
+    imageAlt: 'Daily business utilities, household items, and general merchandise selection',
   },
 ];
 

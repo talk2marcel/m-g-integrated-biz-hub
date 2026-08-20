@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import { ShoppingCart, MessageCircleMore } from 'lucide-react';
 import Button from './Button';
 import { getWhatsAppLink, PRIMARY_WHATSAPP_NUMBER } from '../utils/whatsapp';
 
 function ProductCard({ product, onAddToCart, icon: Icon }) {
+  const [imageError, setImageError] = useState(false);
   const priceLabel =
     typeof product.price === 'number' && Number.isFinite(product.price)
       ? `₦${product.price.toLocaleString('en-NG')}`
@@ -17,6 +19,22 @@ function ProductCard({ product, onAddToCart, icon: Icon }) {
 
   return (
     <article className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-emerald-200 hover:shadow-md">
+      <div className="mb-4 aspect-video w-full overflow-hidden rounded-xl bg-slate-100">
+        {product.image && !imageError ? (
+          <img
+            src={product.image}
+            alt={product.imageAlt || product.name}
+            loading="lazy"
+            onError={() => setImageError(true)}
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <div className="flex h-full w-full items-center justify-center text-[var(--color-brand-emerald)]" aria-label={`${product.name} image unavailable`}>
+            {Icon ? <Icon className="h-10 w-10" aria-hidden="true" /> : <ShoppingCart className="h-10 w-10" aria-hidden="true" />}
+          </div>
+        )}
+      </div>
+
       <div className="mb-4 flex items-center justify-between gap-3">
         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-50 text-[var(--color-brand-emerald)] ring-1 ring-emerald-100">
           {Icon ? <Icon className="h-5 w-5" aria-hidden="true" /> : <ShoppingCart className="h-5 w-5" aria-hidden="true" />}
