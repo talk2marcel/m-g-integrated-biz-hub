@@ -28,29 +28,32 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-xs">
-      {/* Slim Top Notice Bar */}
-      <NoticeBar />
+  <header className="sticky top-0 z-50 w-full bg-white shadow-xs">
+    {/* Slim Top Notice Bar */}
+    <NoticeBar />
 
-      {/* Main Navbar */}
+    {/* Full-Width Brand Banner */}
+    <div className="w-full bg-white border-b border-slate-100">
+      <a
+        href="#hero"
+        title="M.&.G Integrated Biz Hub"
+        className="block w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-emerald)]"
+      >
+       <div className="h-[110px] sm:h-[145px] lg:h-[170px] w-full overflow-hidden">
+          <img
+            src="/images/logo.png"
+            alt="M.&.G Integrated Biz Hub"
+            className="h-full w-full object-contain scale-110"
+          />
+        </div>
+      </a>
+    </div>
+
+    {/* Main Navbar */}
       <nav className="border-b border-slate-200 bg-white/95 backdrop-blur-sm" aria-label="Main Navigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
-            {/* Logo Branding */}
-            <div className="flex-shrink-0">
-              <a
-                href="#hero"
-                className="inline-flex focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-emerald)] rounded-md transition-opacity hover:opacity-80"
-                title="M.&.G Integrated Biz Hub"
-              >
-                <img
-                  src="/images/logo.png"
-                  alt="M.&.G Integrated Biz Hub"
-                  className="h-12 sm:h-16 w-auto"
-                />
-              </a>
-            </div>
-
+            
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-5 lg:space-x-7">
               {navItems.map((item) => (
