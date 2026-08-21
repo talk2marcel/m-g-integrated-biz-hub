@@ -52,10 +52,10 @@ export function Navbar() {
     {/* Main Navbar */}
       <nav className="border-b border-slate-200 bg-white/95 backdrop-blur-sm" aria-label="Main Navigation">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 sm:h-20">
+          <div className="flex items-center justify-between h-12 sm:h-14">
             
             {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-5 lg:space-x-7">
+            <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
               {navItems.map((item) => (
                 <a
                   key={item.name}
